@@ -1,0 +1,6 @@
+framework module Pods_rick_Montis {
+  umbrella header "Pods-rick&Montis-umbrella.h"
+
+  export *
+  module * { export * }
+}
