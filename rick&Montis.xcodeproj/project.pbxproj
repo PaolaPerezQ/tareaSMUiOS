@@ -78,18 +78,50 @@
 		AD4F716C28877DAD005EC9CB /* rick&Montis */ = {
 			isa = PBXGroup;
 			children = (
+				ADC1D621289218E70042435D /* ViewModelRM */,
+				ADC1D620289218B70042435D /* ViewRm */,
+				ADC1D61F2892187A0042435D /* RouterRM */,
+				AD8A711D289219C000B969A3 /* Config */,
+			);
+			path = "rick&Montis";
+			sourceTree = "<group>";
+		};
+		AD8A711D289219C000B969A3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
 				AD4F716F28877DAD005EC9CB /* SceneDelegate.swift */,
 				AD4F716D28877DAD005EC9CB /* AppDelegate.swift */,
-				AD4F717128877DAD005EC9CB /* ViewController.swift */,
-				AD8307CD2891CEC500F2CFE2 /* ResultstPersonajes.swift */,
-				AD53EEFF288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift */,
-				AD53EF00288F393900DC2C0A /* celdaRickAndMortisTableViewCell.xib */,
-				AD4F717328877DAE005EC9CB /* Main.storyboard */,
-				AD4F717628877DBD005EC9CB /* Assets.xcassets */,
 				AD4F717828877DBD005EC9CB /* LaunchScreen.storyboard */,
 				AD4F717B28877DBD005EC9CB /* Info.plist */,
 			);
-			path = "rick&Montis";
+			path = Config;
+			sourceTree = "<group>";
+		};
+		ADC1D61F2892187A0042435D /* RouterRM */ = {
+			isa = PBXGroup;
+			children = (
+				AD4F717628877DBD005EC9CB /* Assets.xcassets */,
+				AD8307CD2891CEC500F2CFE2 /* ResultstPersonajes.swift */,
+			);
+			path = RouterRM;
+			sourceTree = "<group>";
+		};
+		ADC1D620289218B70042435D /* ViewRm */ = {
+			isa = PBXGroup;
+			children = (
+				AD53EEFF288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift */,
+				AD53EF00288F393900DC2C0A /* celdaRickAndMortisTableViewCell.xib */,
+			);
+			path = ViewRm;
+			sourceTree = "<group>";
+		};
+		ADC1D621289218E70042435D /* ViewModelRM */ = {
+			isa = PBXGroup;
+			children = (
+				AD4F717328877DAE005EC9CB /* Main.storyboard */,
+				AD4F717128877DAD005EC9CB /* ViewController.swift */,
+			);
+			path = ViewModelRM;
 			sourceTree = "<group>";
 		};
 		E4B55697589EAF0A182581F4 /* Frameworks */ = {
