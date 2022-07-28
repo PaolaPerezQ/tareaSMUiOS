@@ -28,7 +28,7 @@
 		AD4F717428877DAE005EC9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD4F717628877DBD005EC9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD4F717928877DBD005EC9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AD4F717B28877DBD005EC9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4F717B28877DBD005EC9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Config/Info.plist; sourceTree = "<group>"; };
 		AD53EEFF288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celdaRickAndMortisTableViewCell.swift; sourceTree = "<group>"; };
 		AD53EF00288F393900DC2C0A /* celdaRickAndMortisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = celdaRickAndMortisTableViewCell.xib; sourceTree = "<group>"; };
 		AD8307CD2891CEC500F2CFE2 /* ResultstPersonajes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultstPersonajes.swift; sourceTree = "<group>"; };
@@ -78,29 +78,21 @@
 		AD4F716C28877DAD005EC9CB /* rick&Montis */ = {
 			isa = PBXGroup;
 			children = (
+				AD4F717628877DBD005EC9CB /* Assets.xcassets */,
+				AD4F717828877DBD005EC9CB /* LaunchScreen.storyboard */,
+				AD4F716D28877DAD005EC9CB /* AppDelegate.swift */,
+				AD4F716F28877DAD005EC9CB /* SceneDelegate.swift */,
+				AD4F717B28877DBD005EC9CB /* Info.plist */,
 				ADC1D621289218E70042435D /* ViewModelRM */,
 				ADC1D620289218B70042435D /* ViewRm */,
 				ADC1D61F2892187A0042435D /* RouterRM */,
-				AD8A711D289219C000B969A3 /* Config */,
 			);
 			path = "rick&Montis";
-			sourceTree = "<group>";
-		};
-		AD8A711D289219C000B969A3 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				AD4F716F28877DAD005EC9CB /* SceneDelegate.swift */,
-				AD4F716D28877DAD005EC9CB /* AppDelegate.swift */,
-				AD4F717828877DBD005EC9CB /* LaunchScreen.storyboard */,
-				AD4F717B28877DBD005EC9CB /* Info.plist */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		ADC1D61F2892187A0042435D /* RouterRM */ = {
 			isa = PBXGroup;
 			children = (
-				AD4F717628877DBD005EC9CB /* Assets.xcassets */,
 				AD8307CD2891CEC500F2CFE2 /* ResultstPersonajes.swift */,
 			);
 			path = RouterRM;
