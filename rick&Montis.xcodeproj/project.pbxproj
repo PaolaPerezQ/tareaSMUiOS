@@ -16,6 +16,7 @@
 		AD4F717A28877DBD005EC9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4F717828877DBD005EC9CB /* LaunchScreen.storyboard */; };
 		AD53EF01288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53EEFF288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift */; };
 		AD53EF02288F393A00DC2C0A /* celdaRickAndMortisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD53EF00288F393900DC2C0A /* celdaRickAndMortisTableViewCell.xib */; };
+		AD8307CE2891CEC500F2CFE2 /* ResultstPersonajes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8307CD2891CEC500F2CFE2 /* ResultstPersonajes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AD4F717B28877DBD005EC9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD53EEFF288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celdaRickAndMortisTableViewCell.swift; sourceTree = "<group>"; };
 		AD53EF00288F393900DC2C0A /* celdaRickAndMortisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = celdaRickAndMortisTableViewCell.xib; sourceTree = "<group>"; };
+		AD8307CD2891CEC500F2CFE2 /* ResultstPersonajes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultstPersonajes.swift; sourceTree = "<group>"; };
 		CE968730372E3393E0546CF5 /* Pods_rick_Montis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rick_Montis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55018D0E5CBD127A0B11AB9 /* Pods-rick&Montis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rick&Montis.release.xcconfig"; path = "Target Support Files/Pods-rick&Montis/Pods-rick&Montis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				AD4F716F28877DAD005EC9CB /* SceneDelegate.swift */,
 				AD4F716D28877DAD005EC9CB /* AppDelegate.swift */,
 				AD4F717128877DAD005EC9CB /* ViewController.swift */,
+				AD8307CD2891CEC500F2CFE2 /* ResultstPersonajes.swift */,
 				AD53EEFF288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift */,
 				AD53EF00288F393900DC2C0A /* celdaRickAndMortisTableViewCell.xib */,
 				AD4F717328877DAE005EC9CB /* Main.storyboard */,
@@ -215,6 +218,7 @@
 				AD53EF01288F393900DC2C0A /* celdaRickAndMortisTableViewCell.swift in Sources */,
 				AD4F717228877DAD005EC9CB /* ViewController.swift in Sources */,
 				AD4F716E28877DAD005EC9CB /* AppDelegate.swift in Sources */,
+				AD8307CE2891CEC500F2CFE2 /* ResultstPersonajes.swift in Sources */,
 				AD4F717028877DAD005EC9CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

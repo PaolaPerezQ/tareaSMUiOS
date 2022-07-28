@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OQQ-Nv-i3t">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,63 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HELLO!-->
+        <scene sceneID="YeJ-bO-i4w">
+            <objects>
+                <viewController title="HELLO!" id="OQQ-Nv-i3t" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5fu-wM-pz9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="PP2-7a-clS">
+                                <rect key="frame" x="45" y="60" width="300" height="585.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="M7C-1l-z6a">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="499.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rick &amp; Mortis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fA-Um-D1F">
+                                                <rect key="frame" x="40" y="0.0" width="220" height="46.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                                <color key="textColor" red="0.39425679749999998" green="0.050346829670000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6459-Bandeja-Pequena-Rick-y-Morty-Spiral-18x14cm" translatesAutoresizingMaskIntoConstraints="NO" id="qdF-dN-yQo">
+                                                <rect key="frame" x="0.0" y="71.666666666666629" width="300" height="428"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="Ikl-nu-4j1"/>
+                                                    <constraint firstAttribute="height" constant="428" id="dFb-xa-UT8"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCz-lR-TJh">
+                                        <rect key="frame" x="24" y="525.66666666666663" width="252" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Ver Personajes">
+                                            <color key="titleColor" red="0.39425679749999998" green="0.050346829670000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="5hv-gO-9nb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WbD-FM-0KH"/>
+                        <color key="backgroundColor" red="0.39169794471654523" green="0.9573422874650197" blue="0.96010767487046633" alpha="0.12165169324772161" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PP2-7a-clS" firstAttribute="leading" secondItem="WbD-FM-0KH" secondAttribute="leading" constant="45" id="1Nl-Ap-osk"/>
+                            <constraint firstItem="PP2-7a-clS" firstAttribute="top" secondItem="WbD-FM-0KH" secondAttribute="top" constant="16" id="mPY-vI-XPr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hello!" id="Dex-ns-GyI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38X-Jm-LGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131.8840579710145" y="72.554347826086968"/>
+        </scene>
+        <!--Personajes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rick_Montis" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,14 +73,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cT4-ML-Qjz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nCU-HM-Hx5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.39425679749999998" green="0.050346829670000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaTabla" id="bZf-AN-Mpg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaTabla" id="RH8-5q-CKp">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bZf-AN-Mpg" id="JaD-eV-hnb">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RH8-5q-CKp" id="hTk-u6-0Vc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -35,24 +92,47 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cT4-ML-Qjz" secondAttribute="bottom" id="0hg-o6-yBi"/>
-                            <constraint firstItem="cT4-ML-Qjz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CqS-WD-8OD"/>
-                            <constraint firstItem="cT4-ML-Qjz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FTH-4f-XpQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cT4-ML-Qjz" secondAttribute="trailing" id="FdP-Uy-LRS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nCU-HM-Hx5" secondAttribute="trailing" id="2Wo-Lg-cCs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nCU-HM-Hx5" secondAttribute="bottom" id="8DE-nN-j6i"/>
+                            <constraint firstItem="nCU-HM-Hx5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dKJ-Hf-k0r"/>
+                            <constraint firstItem="nCU-HM-Hx5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rik-u8-g1v"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Personajes" id="DuB-EW-JfT"/>
                     <connections>
-                        <outlet property="tablaRM" destination="cT4-ML-Qjz" id="QZf-GS-QUz"/>
+                        <outlet property="tablaRM" destination="nCU-HM-Hx5" id="O9f-6p-S4h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7246376811595" y="73.369565217391312"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="73.369565217391312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JSr-Cm-LrJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yhr-6P-jVi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JK7-Xb-4AQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OQQ-Nv-i3t" kind="relationship" relationship="rootViewController" id="aDR-25-KIh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Huq-O1-GOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342.02898550724638" y="72.554347826086968"/>
         </scene>
     </scenes>
     <resources>
+        <image name="6459-Bandeja-Pequena-Rick-y-Morty-Spiral-18x14cm" width="1000" height="1000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

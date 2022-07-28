@@ -9,21 +9,31 @@ import UIKit
 
 class celdaRickAndMortisTableViewCell: UITableViewCell {
 
-    
- 
+   
     @IBOutlet weak var imagenRM: UIImageView!
-    
     
     @IBOutlet weak var nameRM: UILabel!
     
+    @IBOutlet weak var idRM: UILabel!
+    
     @IBOutlet weak var statusRM: UILabel!
+    
+    @IBOutlet weak var origenRM: UILabel!
+    
+    
+    @IBOutlet weak var detalleRM: UILabel!
+    
+    
+    
+    
+    
     
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
        
-        
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
